@@ -1,0 +1,14 @@
+{
+  "name": "speedpost-batch",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Assistente local para conectar contas autorizadas à Speedpost",
+  "scripts": {
+    "start": "node src/server.js",
+    "postinstall": "patchright install chromium"
+  },
+  "dependencies": {
+    "otpauth": "^9.3.6",
+    "patchright": "^1.52.5"
+  }
+}

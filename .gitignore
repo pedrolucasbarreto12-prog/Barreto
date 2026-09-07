@@ -1,0 +1,6 @@
+node_modules/
+dados/
+config.local.json
+licenca.local.json
+admin-token.local.txt
+*.zip

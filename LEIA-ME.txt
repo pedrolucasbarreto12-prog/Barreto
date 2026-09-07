@@ -1,0 +1,61 @@
+========================================================
+  CONECTAR CONTAS À SPEEDPOST — COMO USAR
+========================================================
+
+Use apenas contas próprias ou cuja conexão tenha sido autorizada.
+
+1. Extraia todo o ZIP para uma pasta normal.
+2. Abra INICIAR.bat. Na primeira vez, aguarde a instalação.
+3. Se a tela não abrir, acesse http://localhost:7878.
+4. Cole a chave de licença fornecida e clique em "Ativar neste computador".
+5. Informe o login da Speedpost e cole as contas.
+6. Cada conta gera um Workspace com o mesmo nome do @ e é conectada nele.
+
+LICENÇA
+
+- Cada chave funciona em somente um computador.
+- A primeira ativação vincula a chave automaticamente à máquina.
+- A licença é conferida ao abrir, iniciar e antes de cada conta do lote.
+- Licença expirada ou revogada bloqueia a automação.
+- É necessário acesso à internet para validar a licença.
+- Para trocar de computador, o administrador precisa usar "Trocar PC" no painel.
+
+FORMATOS ACEITOS
+
+  usuario:senha:chave2fa
+  usuario,senha,chave2fa
+
+Também aceita o formato de três linhas:
+
+  CHAVE2FA
+  usuario
+  senha
+
+COMPORTAMENTO
+
+- O código TOTP é calculado localmente.
+- Antes de cada conexão, somente a sessão do Instagram é limpa. O login da
+  Speedpost e a verificação de segurança permanecem salvos.
+- O workspace é aberto automaticamente antes de clicar em Instagram.
+- Avisos do navegador para salvar senhas são desativados e fechados.
+- Quando necessário, a conta é configurada como Criador de conteúdo, categoria
+  Blog pessoal; depois o assistente confirma a mudança, conclui a configuração,
+  concede as permissões e aguarda o retorno à Speedpost.
+- O pop-up de indicação/afiliados da Speedpost é fechado automaticamente.
+- Erros de login são registrados; em seguida, o assistente retorna a Contas e
+  continua com o próximo item do lote.
+- Contas sem a chave 2FA são recusadas.
+- CAPTCHA e confirmação por telefone/e-mail não são contornados: a conta é
+  marcada como falha para revisão manual.
+- Se o Instagram solicitar mudança para conta profissional, o assistente segue
+  o fluxo exibido no vídeo, escolhe "Criador" e a categoria "Blog pessoal".
+- Credenciais da Speedpost só são salvas no computador se essa opção for marcada.
+- Na primeira execução, a Speedpost pode abrir uma verificação de segurança.
+  Conclua-a manualmente no navegador; o assistente aguarda por até 3 minutos e
+  mantém o perfil local para reduzir novas verificações nas próximas execuções.
+- Feche a janela preta para encerrar.
+
+IMPORTANTE
+
+Sites podem alterar textos e telas. Se o processo parar, consulte o log e a
+captura salva na pasta dados/screenshots.
